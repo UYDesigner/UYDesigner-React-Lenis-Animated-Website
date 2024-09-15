@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <link rel="stylesheet" href="./style.css" class="css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .grid>div {
+            grid-row: var(--r);
+            grid-column: var(--c);
+        }
+
+        .grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .elem img {
+            transform-origin: center;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w-full bg-zinc-900 overflow-hidden">
+        <div class="grid grid-elem elem cols-8 rows-20 gap-2">
+            <div class="elem elem col-span-1 row-span-1" style="--r: 1; --c:3;"><img src="./img/9.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 1; --c:7;"><img src="./img/2.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 2; --c:1;"><img src="./img/3.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 2; --c:6;"><img src="./img/4.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 3; --c:4;"><img src="./img/5.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 3; --c:8;"><img src="./img/6.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 4; --c:1;"><img src="./img/7.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 4; --c:6;"><img src="./img/1.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 5; --c:2;"><img src="./img/8.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 5; --c:8;"><img src="./img/9.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 6; --c:3;"><img src="./img/11.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 6; --c:7;"><img src="./img/12.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 7; --c:5;"><img src="./img/13.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 7; --c:8;"><img src="./img/14.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 8; --c:1;"><img src="./img/15.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 8; --c:4;"><img src="./img/1.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 9; --c:2;"><img src="./img/17.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r:9; --c:6;"><img src="./img/18.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 10; --c:3;"><img src="./img/19.jpg"></div>
+            <div class="elem col-span-1 row-span-1" style="--r: 10; --c:7;"><img src="./img/20.jpg"></div>
+        </div>
+        <div>
+            <div class="w-full fixed top-0 left-0 h-full flex flex-col items-center justify-center  text-white z-[10]">
+                <h1 class="text-8xl mb-4 text-white uppercase">Thomas Vance <sup>&reg;</sup></h1>
+                <h2 class="text-4xl mb-4 text-white font-regular">地獄に落ちろ、野郎</h2>
+
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="w-full h-screen bg-white-800 relative  z-[999] flex flex-col fl items-center justify-center ">
+            <div class="w-[70%] flex items-center justify-center text-center flex-col">
+                <p class="text-4xl leading-relaxed font-regular ">Thomas Vance is a distinguished brand known for its
+                    commitment to quality and
+                    innovation across its diverse product lines.</p>
+                <p class="text-4xl leading-relaxed "> Established with a vision to blend classic elegance with modern
+                    functionality, Thomas Vance has
+                    carved a niche in the luxury market.<sup>&reg;</sup></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
